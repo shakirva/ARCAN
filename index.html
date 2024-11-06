@@ -30,7 +30,7 @@
 
        <style>
         .footer-section {
-            background-color: #b2d5dd;
+            background-color: #a4c4cb;
             padding: 40px 0;
         }
         .footer-logo {
@@ -62,6 +62,63 @@
             padding: 10px 0;
             text-align: center;
         }
+
+
+
+        @media only screen and (min-width: 768px) and (max-width: 1365px) {
+  p.custom-margin {
+    margin-bottom: 220px !important;
+  }
+  .custom-length {
+    /* height: 380px !important; */
+    width: 20px !important;
+    margin-top: 50px !important;
+    margin-left: -20px !important;
+    
+  }
+  .img-length {
+    height: 40rem !important;
+    object-fit: cover;
+  }
+  .img-width {
+    width: 20rem !important;
+    height: 40rem !important;
+    object-fit: cover;
+  }
+  .font {
+    font-size: 55px !important;
+  }
+  .img-size {
+    width: 5rem !important;
+  }
+}
+
+/* Media query for iPad Pro version */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  p.custom-margin {
+    margin-bottom: 180px !important; /* Adjusted for better spacing on iPad Pro */
+  }
+
+  .custom-length {
+    height: 420px !important; /* Slightly larger height for iPad Pro */
+    width: 240px !important; /* Wider width for better scaling */
+    margin-top: 60px !important;
+    margin-left: -15px !important;
+  }
+
+  .img-length {
+    height: 30rem !important; /* Increased height for better appearance on larger screens */
+    object-fit: cover;
+  }
+
+  .img-width {
+    width: 25rem !important; /* Adjusted width for better scaling */
+    height: 28rem !important; /* Adjusted height */
+    object-fit: cover;
+  }
+ 
+}
+
     </style>
    </head>
    <body class="sbar_color_one">    
@@ -410,13 +467,14 @@
 <section class="container my-5">
    <div class="row">
        <div class="col-md-6 ">
-           <img src="assets/image/VISA.jpg" class="img-fluid rounded-5 img-width" alt="Who we are image" >
+           <img src="assets/image/VISA.jpg" class="img-fluid rounded-5  img-length img-width " alt="Who we are image" >
        </div>
        <div class="col-md-6"
            style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
            <h2 class="gradient heading">VISA <br> DOCUMENTATION</h2>
-           <p class="para" style=" width: 600px; margin-top: 20px  ;  text-align: justify;">Visa documentation is essential for individuals planning to travel internationally, as it outlines the specific documents required by the destination country to grant entry. Typically, visa documentation includes a completed visa application form, a valid passport, passport-sized photographs, and proof of financial means to support oneself during the stay. Additional requirements may vary depending on the type of visa, such as proof of employment, invitation letters, accommodation bookings, and a detailed itinerary. Some countries also mandate health insurance, a clean criminal record, or medical examinations for certain visas. The processing time and fees can differ by country and visa type, so applicants should review the specific requirements well in advance. Ensuring all documentation is accurate and complete is crucial to avoid delays or rejections during the visa application process.</p>
-       </div> 
+           <p class="para d-none d-lg-block" style=" width: 520px; margin-top: 20px  ;  text-align: justify;">Visa documentation is essential for individuals planning to travel internationally, as it outlines the specific documents required by the destination country to grant entry. Typically, visa documentation includes a completed visa application form, a valid passport, passport-sized photographs, and proof of financial means to support oneself during the stay. Additional requirements may vary depending on the type of visa, such as proof of employment, invitation letters, accommodation bookings, and a detailed itinerary. Some countries also mandate health insurance, a clean criminal record, or medical examinations for certain visas. The processing time and fees can differ by country and visa type, so applicants should review the specific requirements well in advance. Ensuring all documentation is accurate and complete is crucial to avoid delays or rejections during the visa application process.</p>
+           <p class="para d-block d-lg-none" style="  margin-top: 20px  ;  text-align: justify;">Visa documentation is essential for individuals planning to travel internationally, as it outlines the specific documents required by the destination country to grant entry. Typically, visa documentation includes a completed visa application form, a valid passport, passport-sized photographs, and proof of financial means to support oneself during the stay. Additional requirements may vary depending on the type of visa, such as proof of employment, invitation letters, accommodation bookings, and a detailed itinerary. Some countries also mandate health insurance, a clean criminal record, or medical examinations for certain visas. The processing time and fees can differ by country and visa type, so applicants should review the specific requirements well in advance. Ensuring all documentation is accurate and complete is crucial to avoid delays or rejections during the visa application process.</p>
+         </div> 
    </div>
 </section>
 
@@ -599,7 +657,7 @@
               <!-- Logo and Description -->
               <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
                   <div class="footer-logo">
-                      <p><strong>MIKOMI</strong><br>JAPANESE<br>LANGUAGE<br>ACADEMY</p>
+                        <img src="assets/image/ARCANE-LOGO.png" class="img-fluid" alt="Logo">
                   </div>
                   <p>Empowering Language Learning Worldwide. Join us and start your journey to fluency today.</p>
                   <div class="social-icons">
@@ -622,7 +680,7 @@
               </div>
   
               <!-- Kottayam Address -->
-              <div class="col-md-2 t text-md-start mb-4 mb-md-0">
+              <div class="col-md-2 t text-md-start mb-4 mb-md-0 text-center">
                   <h5>KOTTAYAM</h5>
                   <p class="footer-contact" C>
                       1st Floor Roshco Tower Near Kalyan Silks
@@ -631,31 +689,35 @@
                   </p>
               </div>
   
-              <!-- Cochin Address -->
-              <div class="col-md-2 text-center text-md-start mb-4 mb-md-0">
-                  <h5>COCHIN</h5>
-                  <p class="footer-contact" style="text-align: justifY" >
-                      2nd floor, R.S House building, Mahatma Gandhi Rd,<br>
-                      Kochi, Kerala 682011<br>
-                      Mob: +91 6282151141
-                  </p>
-              </div>
+             
+
+
+
+              <div class="col-md-2 t text-md-start mb-4 mb-md-0 text-center">
+               <h5>COCHIN</h5>
+               <p class="footer-contact" C>
+                  2nd floor, R.S House building, Mahatma Gandhi Rd,<br>
+                  Kochi, Kerala 682011<br>
+                  Mob: +91 6282151141
+               </p>
+           </div>
   
-              <!-- Thrissur Address and Email Subscription -->
-              <div class="col-md-2 text-center text-md-start">
-                  <h5 class="FW-BOLD">THRISSUR</h5>
-                  <p class="footer-contact"  style="text-align: justifY">
-                      2nd Floor, Rayirath Tower NH JN<br>
-                      Pattikkad Thrissur 680652<br>
-                      Mob: 8848941606 | 7306162472
-                  </p>
-                  
-              </div>
-          </div>
+
+
+
+           <div class="col-md-2 t text-md-start mb-4 mb-md-0 text-center">
+            <h5>THRISSUR</h5>
+            <p class="footer-contact" C>
+               2nd Floor, Rayirath Tower NH JN<br>
+               Pattikkad Thrissur 680652<br>
+              
+               Mob: 8848941606 | 7306162472
+            </p>
+       
       </div>
       <!-- Bottom Section -->
       <div class="footer-bottom">
-          <p class="mb-0">© <span id="currentYear"></span> Mikomi Japanese Language Academy. All rights reserved.</p>
+          <p class="mb-0">© <span id="currentYear"></span> ARCANE ALLIANCE. All rights reserved.</p>
       </div>
   </footer>
  <!--------footer-------->
