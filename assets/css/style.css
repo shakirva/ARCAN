@@ -5002,7 +5002,7 @@ textarea {
 .natural_beauty {
 	position: relative;
 	padding: 70px 0px;
-	background: #601a88;
+	background: gray;
 }
 
 .natural_beauty h1 {
@@ -5126,7 +5126,7 @@ textarea {
 }
 
 .price_table .price_table_inner:hover .theme-btn {
-	background: #601a88;
+	background: #00547A;
 	color: #fff;
 }
 
@@ -6124,7 +6124,7 @@ textarea {
 }
 
 .price_table.hme-five .price_table_content:hover a.theme-btn {
-	background: #105abf;
+	background: #00547A;
 	color: #fff;
 }
 
